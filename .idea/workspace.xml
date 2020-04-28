@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b86531b-b9bf-46df-991b-a946c222c2e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/JwtSwaggerExample.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/UploadDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/UploadRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/UploadService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/JwtExample2Application.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/config/SecurityConfig.class" afterDir="false" />
@@ -18,6 +20,11 @@
       <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/UserService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/example/demo/util/JwtUtil.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/JwtExample2ApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploadedDocs/monu01:05:53.313221Screenshot from 2020-04-07 12-32-20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploadedDocs/somu02:54:30.681492Admit CardSSC.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/util/JwtUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,16 +36,27 @@
       <option value="directory" />
     </option>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1at0qDroBWmtKVaMSEpdA0oXyUF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -91,57 +109,78 @@
       <option name="project" value="LOCAL" />
       <updated>1587586403717</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Restrictions applied">
+      <created>1587586583339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587586583339</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Restrictions applied" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restrictions applied" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2" timestamp="1587586403249">
+    <state x="515" y="27" width="553" height="741" key="#com.intellij.ide.util.MemberChooser" timestamp="1588015752762">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2/49.27.1317.741@49.27.1317.741" timestamp="1587586403249" />
+    <state x="515" y="27" width="553" height="741" key="#com.intellij.ide.util.MemberChooser/49.27.1317.741@49.27.1317.741" timestamp="1588015752762" />
+    <state x="440" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587848756867">
+      <screen x="49" y="27" width="1317" height="741" />
+    </state>
+    <state x="440" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/49.27.1317.741@49.27.1317.741" timestamp="1587848756867" />
+    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2" timestamp="1587586583138">
+      <screen x="49" y="27" width="1317" height="741" />
+    </state>
+    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2/49.27.1317.741@49.27.1317.741" timestamp="1587586583138" />
     <state x="149" y="125" width="1117" height="543" key="DiffContextDialog" timestamp="1587586303118">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="149" y="125" width="1117" height="543" key="DiffContextDialog/49.27.1317.741@49.27.1317.741" timestamp="1587586303118" />
-    <state width="1271" height="229" key="GridCell.Tab.0.bottom" timestamp="1587586045012">
+    <state x="523" y="296" width="368" height="259" key="Github.ShareDialog" timestamp="1587587179593">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="229" key="GridCell.Tab.0.bottom/49.27.1317.741@49.27.1317.741" timestamp="1587586045012" />
-    <state width="1271" height="229" key="GridCell.Tab.0.center" timestamp="1587586045007">
+    <state x="523" y="296" width="368" height="259" key="Github.ShareDialog/49.27.1317.741@49.27.1317.741" timestamp="1587587179593" />
+    <state width="1271" height="271" key="GridCell.Tab.0.bottom" timestamp="1588098289061">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="229" key="GridCell.Tab.0.center/49.27.1317.741@49.27.1317.741" timestamp="1587586045007" />
-    <state width="1271" height="229" key="GridCell.Tab.0.left" timestamp="1587586045006">
+    <state width="1271" height="271" key="GridCell.Tab.0.bottom/49.27.1317.741@49.27.1317.741" timestamp="1588098289061" />
+    <state width="1271" height="271" key="GridCell.Tab.0.center" timestamp="1588098289061">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="229" key="GridCell.Tab.0.left/49.27.1317.741@49.27.1317.741" timestamp="1587586045006" />
-    <state width="1271" height="229" key="GridCell.Tab.0.right" timestamp="1587586045008">
+    <state width="1271" height="271" key="GridCell.Tab.0.center/49.27.1317.741@49.27.1317.741" timestamp="1588098289061" />
+    <state width="1271" height="271" key="GridCell.Tab.0.left" timestamp="1588098289061">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="229" key="GridCell.Tab.0.right/49.27.1317.741@49.27.1317.741" timestamp="1587586045008" />
-    <state width="1271" height="219" key="GridCell.Tab.1.bottom" timestamp="1587585162153">
+    <state width="1271" height="271" key="GridCell.Tab.0.left/49.27.1317.741@49.27.1317.741" timestamp="1588098289061" />
+    <state width="1271" height="271" key="GridCell.Tab.0.right" timestamp="1588098289061">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="219" key="GridCell.Tab.1.bottom/49.27.1317.741@49.27.1317.741" timestamp="1587585162153" />
-    <state width="1271" height="219" key="GridCell.Tab.1.center" timestamp="1587585162151">
+    <state width="1271" height="271" key="GridCell.Tab.0.right/49.27.1317.741@49.27.1317.741" timestamp="1588098289061" />
+    <state width="1271" height="219" key="GridCell.Tab.1.bottom" timestamp="1587851026646">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="219" key="GridCell.Tab.1.center/49.27.1317.741@49.27.1317.741" timestamp="1587585162151" />
-    <state width="1271" height="219" key="GridCell.Tab.1.left" timestamp="1587585162150">
+    <state width="1271" height="219" key="GridCell.Tab.1.bottom/49.27.1317.741@49.27.1317.741" timestamp="1587851026646" />
+    <state width="1271" height="219" key="GridCell.Tab.1.center" timestamp="1587851026646">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="219" key="GridCell.Tab.1.left/49.27.1317.741@49.27.1317.741" timestamp="1587585162150" />
-    <state width="1271" height="219" key="GridCell.Tab.1.right" timestamp="1587585162151">
+    <state width="1271" height="219" key="GridCell.Tab.1.center/49.27.1317.741@49.27.1317.741" timestamp="1587851026646" />
+    <state width="1271" height="219" key="GridCell.Tab.1.left" timestamp="1587851026645">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="219" key="GridCell.Tab.1.right/49.27.1317.741@49.27.1317.741" timestamp="1587585162151" />
+    <state width="1271" height="219" key="GridCell.Tab.1.left/49.27.1317.741@49.27.1317.741" timestamp="1587851026645" />
+    <state width="1271" height="219" key="GridCell.Tab.1.right" timestamp="1587851026646">
+      <screen x="49" y="27" width="1317" height="741" />
+    </state>
+    <state width="1271" height="219" key="GridCell.Tab.1.right/49.27.1317.741@49.27.1317.741" timestamp="1587851026646" />
     <state x="196" y="31" key="SettingsEditor" timestamp="1587585921415">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
