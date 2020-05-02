@@ -1,9 +1,13 @@
 package com.example.demo.model;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class Uploads {
+    @Id
+    String id;
+
    private String username;
    private String uploadTime;
    private String fileName;

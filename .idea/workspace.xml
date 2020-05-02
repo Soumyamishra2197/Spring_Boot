@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b86531b-b9bf-46df-991b-a946c222c2e3" name="Default Changelist" comment="second commit">
+    <list default="true" id="7b86531b-b9bf-46df-991b-a946c222c2e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/OperationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/SearchDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/SearchService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ProjectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Uploads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Uploads.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +46,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.demo.dao" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.JwtExample2Application">
     <configuration name="JwtExample2Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -94,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587586583339</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="removed some files">
+      <created>1588151707436</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588151707436</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -104,21 +123,26 @@
     </ignored-roots>
     <MESSAGE value="First commit" />
     <MESSAGE value="Restrictions applied" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restrictions applied" />
+    <MESSAGE value="removed some files" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed some files" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="515" y="27" width="553" height="741" key="#com.intellij.ide.util.MemberChooser" timestamp="1588015752762">
+    <state x="515" y="27" width="553" height="741" key="#com.intellij.ide.util.MemberChooser" timestamp="1588365019812">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="515" y="27" width="553" height="741" key="#com.intellij.ide.util.MemberChooser/49.27.1317.741@49.27.1317.741" timestamp="1588015752762" />
-    <state x="440" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587848756867">
+    <state x="515" y="27" width="553" height="741" key="#com.intellij.ide.util.MemberChooser/49.27.1317.741@49.27.1317.741" timestamp="1588365019812" />
+    <state x="435" y="174" width="524" height="444" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1588342965474">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="440" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/49.27.1317.741@49.27.1317.741" timestamp="1587848756867" />
-    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2" timestamp="1587586583138">
+    <state x="435" y="174" width="524" height="444" key="#com.intellij.ide.util.PackageChooserDialog/49.27.1317.741@49.27.1317.741" timestamp="1588342965474" />
+    <state x="440" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588356155891">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2/49.27.1317.741@49.27.1317.741" timestamp="1587586583138" />
+    <state x="440" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/49.27.1317.741@49.27.1317.741" timestamp="1588356155891" />
+    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2" timestamp="1588151707242">
+      <screen x="49" y="27" width="1317" height="741" />
+    </state>
+    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2/49.27.1317.741@49.27.1317.741" timestamp="1588151707242" />
     <state x="149" y="125" width="1117" height="543" key="DiffContextDialog" timestamp="1587586303118">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
@@ -127,22 +151,22 @@
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="523" y="296" width="368" height="259" key="Github.ShareDialog/49.27.1317.741@49.27.1317.741" timestamp="1587587179593" />
-    <state width="1271" height="271" key="GridCell.Tab.0.bottom" timestamp="1588151398089">
+    <state width="1271" height="391" key="GridCell.Tab.0.bottom" timestamp="1588445218099">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="271" key="GridCell.Tab.0.bottom/49.27.1317.741@49.27.1317.741" timestamp="1588151398089" />
-    <state width="1271" height="271" key="GridCell.Tab.0.center" timestamp="1588151398088">
+    <state width="1271" height="391" key="GridCell.Tab.0.bottom/49.27.1317.741@49.27.1317.741" timestamp="1588445218099" />
+    <state width="1271" height="391" key="GridCell.Tab.0.center" timestamp="1588445218099">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="271" key="GridCell.Tab.0.center/49.27.1317.741@49.27.1317.741" timestamp="1588151398088" />
-    <state width="1271" height="271" key="GridCell.Tab.0.left" timestamp="1588151398087">
+    <state width="1271" height="391" key="GridCell.Tab.0.center/49.27.1317.741@49.27.1317.741" timestamp="1588445218099" />
+    <state width="1271" height="391" key="GridCell.Tab.0.left" timestamp="1588445218098">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="271" key="GridCell.Tab.0.left/49.27.1317.741@49.27.1317.741" timestamp="1588151398087" />
-    <state width="1271" height="271" key="GridCell.Tab.0.right" timestamp="1588151398088">
+    <state width="1271" height="391" key="GridCell.Tab.0.left/49.27.1317.741@49.27.1317.741" timestamp="1588445218098" />
+    <state width="1271" height="391" key="GridCell.Tab.0.right" timestamp="1588445218099">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="271" key="GridCell.Tab.0.right/49.27.1317.741@49.27.1317.741" timestamp="1588151398088" />
+    <state width="1271" height="391" key="GridCell.Tab.0.right/49.27.1317.741@49.27.1317.741" timestamp="1588445218099" />
     <state width="1271" height="219" key="GridCell.Tab.1.bottom" timestamp="1587851026646">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
@@ -163,5 +187,17 @@
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="196" y="31" key="SettingsEditor/49.27.1317.741@49.27.1317.741" timestamp="1587585921415" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/dao/SearchDao.java</url>
+          <line>21</line>
+          <properties field="mongoTemplate" class="com.example.demo.dao.SearchDao" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
