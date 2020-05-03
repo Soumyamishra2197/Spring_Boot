@@ -39,10 +39,11 @@ public class OperationController {
         return searchDao.findDocumentByUserName(username);
     }
 
-    @RequestMapping(value = "/findFileByUploadTime",method =RequestMethod.GET )
-    @ApiOperation(value = "find a document by time")
-    public Uploads findUploadByUploadTime(@RequestParam("uploadTime") String time){
-        return searchDao.findDocumentByUserName(time);
+
+    @RequestMapping(value = "/findFileByUploadDate",method =RequestMethod.GET )
+    @ApiOperation(value = "find a document by upload date")
+    public Uploads findUploadByUploadDate(@RequestParam("uploadDate") String date){
+       return searchDao.findDocumentByDate(date);
     }
 
 }

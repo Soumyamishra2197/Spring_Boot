@@ -9,7 +9,7 @@ public class Uploads {
     String id;
 
    private String username;
-   private String uploadTime;
+   private String uploadDate;
    private String fileName;
     private String fileDirectory;
 
@@ -21,12 +21,12 @@ public class Uploads {
         this.username = username;
     }
 
-    public String getUploadTime() {
-        return uploadTime;
+    public String getUploadDate() {
+        return uploadDate;
     }
 
-    public void setUploadTime(String uploadTime) {
-        this.uploadTime = uploadTime;
+    public void setUploadDate(String uploadDate) {
+        this.uploadDate= uploadDate;
     }
 
     public String getFileName() {
@@ -45,9 +45,9 @@ public class Uploads {
         this. fileDirectory = uploadedFilePath;
     }
 
-    public Uploads(String username, String uploadTime, String fileName, String  fileDirectory) {
+    public Uploads(String username, String uploadDate, String fileName, String  fileDirectory) {
         this.username = username;
-        this.uploadTime = uploadTime;
+        this.uploadDate = uploadDate;
         this.fileName = fileName;
         this. fileDirectory =  fileDirectory;
     }
@@ -59,7 +59,7 @@ public class Uploads {
     public String toString() {
         return "Uploads{" +
                 "username='" + username + '\'' +
-                ", uploadTime='" + uploadTime + '\'' +
+                ", uploadDate='" + uploadDate + '\'' +
                 ", fileName='" + fileName + '\'' +
                 ", uploadedFilePath='" +  fileDirectory + '\'' +
                 '}';

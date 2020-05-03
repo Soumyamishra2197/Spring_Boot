@@ -8,6 +8,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.InputStreamResource;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -20,7 +21,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Collection;
 
 @RestController
@@ -38,6 +41,10 @@ public class FileController {
     @Autowired
     UploadService uploadService;
 
+    DateTimeFormatter dateTimeFormat;
+    DateTimeFormatter dateTimeFormat2;
+
+
     @RequestMapping(value = "/upload", method= RequestMethod.POST,consumes= MediaType.MULTIPART_FORM_DATA_VALUE)
     @ApiOperation(value = "For uploading documents")
     public ResponseEntity<Object> uploadFile(@RequestParam("file") MultipartFile file, HttpServletRequest request) throws Exception{
@@ -47,13 +54,15 @@ public class FileController {
         String message="Not available";
         String username="";
         String uploadTime="";
-
+        dateTimeFormat= DateTimeFormatter.ofPattern("yyMMddHHmm");
+        dateTimeFormat2=DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDateTime now=LocalDateTime.now();
         if(!jwtUtil.isTokenExpired(currentToken)){
 
-            LocalTime time=LocalTime.now();
-            uploadTime=time+"";
+
+            uploadTime=dateTimeFormat2.format(now);
             username=jwtUtil.extractUserName(currentToken);
-            fileName=username+uploadTime+file.getOriginalFilename();
+            fileName=username+dateTimeFormat.format(now)+file.getOriginalFilename();
 
             if(uploadService.saveUploadedFileDetails(new Uploads(username,uploadTime,fileName,fileDirectory))!=null){
 

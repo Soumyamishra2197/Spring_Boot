@@ -40,9 +40,11 @@ public class SearchDao {
 
    // GroupOperation groupByDate=group("uploadTime").addToSet("filename").as("countFile");
 
-  public Uploads findDocumentByTime(String time){
+
+  public Uploads findDocumentByDate(String date){
         Query query=new Query();
-        query.addCriteria(Criteria.where("uploadTime").regex(time));
+        query.addCriteria(Criteria.where("uploadDate").is(date));
         return mongoTemplate.findOne(query,Uploads.class);
   }
 }
+
