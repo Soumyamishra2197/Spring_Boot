@@ -39,7 +39,7 @@ public class AuthController {
         try {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUsername(),authRequest.getPassword()));
         }catch (Exception e) {
-            throw new Exception("Invalid credentials");
+            throw   new Exception("Invalid credentials");
         }
         return jwtUtil.generateToken(authRequest.getUsername());
     }

@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b86531b-b9bf-46df-991b-a946c222c2e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/TotalUploads.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/OperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/OperationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/SearchDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/SearchDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Uploads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Uploads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/SearchService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588446457035</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Modified search api">
+      <created>1588538481654</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588538481654</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,7 +138,8 @@
     <MESSAGE value="Restrictions applied" />
     <MESSAGE value="removed some files" />
     <MESSAGE value="Added search api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added search api" />
+    <MESSAGE value="Modified search api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified search api" />
   </component>
   <component name="WindowStateProjectService">
     <state x="515" y="27" width="553" height="741" key="#com.intellij.ide.util.MemberChooser" timestamp="1588365019812">
@@ -144,10 +154,10 @@
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="440" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/49.27.1317.741@49.27.1317.741" timestamp="1588356155891" />
-    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2" timestamp="1588446456672">
+    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2" timestamp="1588538481443">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2/49.27.1317.741@49.27.1317.741" timestamp="1588446456672" />
+    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2/49.27.1317.741@49.27.1317.741" timestamp="1588538481443" />
     <state x="149" y="125" width="1117" height="543" key="DiffContextDialog" timestamp="1587586303118">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
@@ -156,38 +166,38 @@
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="523" y="296" width="368" height="259" key="Github.ShareDialog/49.27.1317.741@49.27.1317.741" timestamp="1587587179593" />
-    <state width="1271" height="257" key="GridCell.Tab.0.bottom" timestamp="1588537425458">
+    <state width="1271" height="33" key="GridCell.Tab.0.bottom" timestamp="1588672956395">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="257" key="GridCell.Tab.0.bottom/49.27.1317.741@49.27.1317.741" timestamp="1588537425458" />
-    <state width="1271" height="257" key="GridCell.Tab.0.center" timestamp="1588537425457">
+    <state width="1271" height="33" key="GridCell.Tab.0.bottom/49.27.1317.741@49.27.1317.741" timestamp="1588672956395" />
+    <state width="1271" height="33" key="GridCell.Tab.0.center" timestamp="1588672956394">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="257" key="GridCell.Tab.0.center/49.27.1317.741@49.27.1317.741" timestamp="1588537425457" />
-    <state width="1271" height="257" key="GridCell.Tab.0.left" timestamp="1588537425456">
+    <state width="1271" height="33" key="GridCell.Tab.0.center/49.27.1317.741@49.27.1317.741" timestamp="1588672956394" />
+    <state width="1271" height="33" key="GridCell.Tab.0.left" timestamp="1588672956392">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="257" key="GridCell.Tab.0.left/49.27.1317.741@49.27.1317.741" timestamp="1588537425456" />
-    <state width="1271" height="257" key="GridCell.Tab.0.right" timestamp="1588537425457">
+    <state width="1271" height="33" key="GridCell.Tab.0.left/49.27.1317.741@49.27.1317.741" timestamp="1588672956392" />
+    <state width="1271" height="33" key="GridCell.Tab.0.right" timestamp="1588672956395">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="257" key="GridCell.Tab.0.right/49.27.1317.741@49.27.1317.741" timestamp="1588537425457" />
-    <state width="1271" height="219" key="GridCell.Tab.1.bottom" timestamp="1587851026646">
+    <state width="1271" height="33" key="GridCell.Tab.0.right/49.27.1317.741@49.27.1317.741" timestamp="1588672956395" />
+    <state width="1271" height="313" key="GridCell.Tab.1.bottom" timestamp="1588626044365">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="219" key="GridCell.Tab.1.bottom/49.27.1317.741@49.27.1317.741" timestamp="1587851026646" />
-    <state width="1271" height="219" key="GridCell.Tab.1.center" timestamp="1587851026646">
+    <state width="1271" height="313" key="GridCell.Tab.1.bottom/49.27.1317.741@49.27.1317.741" timestamp="1588626044365" />
+    <state width="1271" height="313" key="GridCell.Tab.1.center" timestamp="1588626044364">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="219" key="GridCell.Tab.1.center/49.27.1317.741@49.27.1317.741" timestamp="1587851026646" />
-    <state width="1271" height="219" key="GridCell.Tab.1.left" timestamp="1587851026645">
+    <state width="1271" height="313" key="GridCell.Tab.1.center/49.27.1317.741@49.27.1317.741" timestamp="1588626044364" />
+    <state width="1271" height="313" key="GridCell.Tab.1.left" timestamp="1588626044363">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="219" key="GridCell.Tab.1.left/49.27.1317.741@49.27.1317.741" timestamp="1587851026645" />
-    <state width="1271" height="219" key="GridCell.Tab.1.right" timestamp="1587851026646">
+    <state width="1271" height="313" key="GridCell.Tab.1.left/49.27.1317.741@49.27.1317.741" timestamp="1588626044363" />
+    <state width="1271" height="313" key="GridCell.Tab.1.right" timestamp="1588626044365">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="219" key="GridCell.Tab.1.right/49.27.1317.741@49.27.1317.741" timestamp="1587851026646" />
+    <state width="1271" height="313" key="GridCell.Tab.1.right/49.27.1317.741@49.27.1317.741" timestamp="1588626044365" />
     <state x="196" y="31" key="SettingsEditor" timestamp="1587585921415">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
@@ -198,11 +208,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/dao/SearchDao.java</url>
-          <line>21</line>
+          <line>23</line>
           <properties field="mongoTemplate" class="com.example.demo.dao.SearchDao" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="org.springframework.data.mongodb.core.aggregation.Aggregation" fieldName="options" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
