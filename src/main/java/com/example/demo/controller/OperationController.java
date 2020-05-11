@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.model.GroupedUploads;
 import com.example.demo.model.TotalUploads;
 import com.example.demo.model.Uploads;
 import com.example.demo.model.Users;
@@ -12,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDateTime;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -43,7 +46,7 @@ public class OperationController {
 
     @RequestMapping(value = "/findFileByUploadDate",method =RequestMethod.GET )
     @ApiOperation(value = "find a document by upload date")
-    public Uploads findUploadByUploadDate(@RequestParam("uploadDate") String date){
+    public Uploads findUploadByUploadDate(@RequestParam("uploadDate") LocalDateTime date){
        return searchService.findDocumentByDate(date);
     }
 
@@ -52,10 +55,18 @@ public class OperationController {
     public String countUploadedDocs(){
         return searchService.countUploadedDocs();
     }
+
     @RequestMapping(value = "getDetailsByDate",method = RequestMethod.GET)
     @ApiOperation(value = "get grouped upload data by date")
-    public Collection<TotalUploads> getGroupedUploadDetails(@RequestParam("uploadDate") String date){
+    public Collection<TotalUploads> getGroupedUploadDetails(@RequestParam("uploadDate") LocalDateTime date){
         Collection<TotalUploads> l=searchService.getUploadDetailsByDate(date);
         return l;
     }
+
+    @RequestMapping(value = "getGroupedUploads" ,method=RequestMethod.GET)
+    @ApiOperation( value="find grouped records of upload")
+    public List<GroupedUploads> getGroupedUploads(){
+        return searchService.getGroupedUploadData();
+    }
+
 }

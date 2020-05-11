@@ -2,6 +2,10 @@ package com.example.demo.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDateTime;
+import java.util.Date;
 
 @Document
 public class Uploads {
@@ -9,9 +13,20 @@ public class Uploads {
     String id;
 
    private String username;
-   private String uploadDate;
-   private String fileName;
-    private String fileDirectory;
+
+   @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
+   private LocalDateTime uploadDate;
+
+    public LocalDateTime getUploadDate() {
+        return uploadDate;
+    }
+
+    public void setUploadDate(LocalDateTime uploadDate) {
+        this.uploadDate = uploadDate;
+    }
+
+    private String fileName;
+      private String fileDirectory;
 
     public String getUsername() {
         return username;
@@ -21,13 +36,9 @@ public class Uploads {
         this.username = username;
     }
 
-    public String getUploadDate() {
-        return uploadDate;
-    }
 
-    public void setUploadDate(String uploadDate) {
-        this.uploadDate= uploadDate;
-    }
+
+
 
     public String getFileName() {
         return fileName;
@@ -45,15 +56,13 @@ public class Uploads {
         this. fileDirectory = uploadedFilePath;
     }
 
-    public Uploads(String username, String uploadDate, String fileName, String  fileDirectory) {
+    public Uploads(String username,LocalDateTime uploadDate, String fileName, String  fileDirectory) {
         this.username = username;
         this.uploadDate = uploadDate;
         this.fileName = fileName;
         this. fileDirectory =  fileDirectory;
     }
 
-    public Uploads() {
-    }
 
     @Override
     public String toString() {

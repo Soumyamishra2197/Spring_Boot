@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.ZonedDateTime;
 import com.example.demo.model.Uploads;
 import com.example.demo.service.UploadService;
 import com.example.demo.service.UserService;
@@ -8,6 +9,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.InputStreamResource;
+import org.springframework.data.mongodb.core.aggregation.DateOperators;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -21,10 +23,12 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Collection;
+import java.util.Date;
 
 @RestController
 @Api(tags = {"api for file operations"})
@@ -41,8 +45,11 @@ public class FileController {
     @Autowired
     UploadService uploadService;
 
-    DateTimeFormatter dateTimeFormat;
+    DateTimeFormat.ISO dateTimeFormat;
     DateTimeFormatter dateTimeFormat2;
+
+
+    public static DateTimeFormat.ISO DATE_TIME;
 
 
     @RequestMapping(value = "/upload", method= RequestMethod.POST,consumes= MediaType.MULTIPART_FORM_DATA_VALUE)
@@ -53,18 +60,21 @@ public class FileController {
         String fileName="";
         String message="Not available";
         String username="";
-        String uploadTime="";
-        dateTimeFormat= DateTimeFormatter.ofPattern("yyMMddHHmm");
-        dateTimeFormat2=DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDateTime uploadDate;
+       // dateTimeFormat= DateTimeFormat.ISO.DATE_TIME;
+
+        dateTimeFormat2=DateTimeFormatter.ISO_DATE_TIME;
         LocalDateTime now=LocalDateTime.now();
         if(!jwtUtil.isTokenExpired(currentToken)){
 
 
-            uploadTime=dateTimeFormat2.format(now);
+           // uploadDate=dateTimeFormat.format(date);
+          //  uploadDate= LocalDateTime.parse(dateTimeFormat2.format(now));
+            uploadDate=LocalDateTime.now();
             username=jwtUtil.extractUserName(currentToken);
-            fileName=username+dateTimeFormat.format(now)+file.getOriginalFilename();
+            fileName=username+dateTimeFormat2.format(now)+file.getOriginalFilename();
 
-            if(uploadService.saveUploadedFileDetails(new Uploads(username,uploadTime,fileName,fileDirectory))!=null){
+            if(uploadService.saveUploadedFileDetails(new Uploads(username,uploadDate,fileName,fileDirectory))!=null){
 
                 File convertFile=new File(fileDirectory,fileName);
 
