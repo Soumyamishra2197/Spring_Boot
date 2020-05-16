@@ -14,6 +14,8 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -50,7 +52,7 @@ public class SearchDao {
   public Uploads findDocumentByDate(LocalDateTime date){
 
       Query query=new Query();
-      query.addCriteria(Criteria.where("uploadDate").is(date));
+      query.addCriteria(Criteria.where("uploadDate").gte(date.toLocalDate()).lte(date.toLocalDate().plus(1, ChronoUnit.DAYS)));
         Uploads uploads= mongoTemplate.findOne(query,Uploads.class);
         System.out.println(uploads.getFileName()+uploads.getUploadedFilePath()+uploads.getUsername());
         return uploads;

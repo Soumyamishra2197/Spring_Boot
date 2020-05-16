@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b86531b-b9bf-46df-991b-a946c222c2e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/ZonedDateTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/GroupedUploads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/SwagConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/SwagConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/OperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/OperationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/SearchDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/SearchDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/UploadDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/UploadDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/TotalUploads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/TotalUploads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Uploads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Uploads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588674120562</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="date modified to isodate">
+      <created>1589220090615</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589220090615</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,7 +158,8 @@
     <MESSAGE value="Added search api" />
     <MESSAGE value="Modified search api" />
     <MESSAGE value=" search api with aggregation" />
-    <option name="LAST_COMMIT_MESSAGE" value=" search api with aggregation" />
+    <MESSAGE value="date modified to isodate" />
+    <option name="LAST_COMMIT_MESSAGE" value="date modified to isodate" />
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="78" width="732" height="637" key="#Inspections" timestamp="1588793659699">
@@ -178,10 +182,10 @@
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="440" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/49.27.1317.741@49.27.1317.741" timestamp="1588356155891" />
-    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2" timestamp="1588674120017">
+    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2" timestamp="1589220090060">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2/49.27.1317.741@49.27.1317.741" timestamp="1588674120017" />
+    <state x="157" y="27" width="1090" height="741" key="CommitChangelistDialog2/49.27.1317.741@49.27.1317.741" timestamp="1589220090060" />
     <state x="149" y="125" width="1117" height="543" key="DiffContextDialog" timestamp="1587586303118">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
@@ -194,22 +198,22 @@
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="523" y="296" width="368" height="259" key="Github.ShareDialog/49.27.1317.741@49.27.1317.741" timestamp="1587587179593" />
-    <state width="1271" height="440" key="GridCell.Tab.0.bottom" timestamp="1589215328668">
+    <state width="1271" height="145" key="GridCell.Tab.0.bottom" timestamp="1589573284818">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="440" key="GridCell.Tab.0.bottom/49.27.1317.741@49.27.1317.741" timestamp="1589215328668" />
-    <state width="1271" height="440" key="GridCell.Tab.0.center" timestamp="1589215328666">
+    <state width="1271" height="145" key="GridCell.Tab.0.bottom/49.27.1317.741@49.27.1317.741" timestamp="1589573284818" />
+    <state width="1271" height="145" key="GridCell.Tab.0.center" timestamp="1589573284818">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="440" key="GridCell.Tab.0.center/49.27.1317.741@49.27.1317.741" timestamp="1589215328666" />
-    <state width="1271" height="440" key="GridCell.Tab.0.left" timestamp="1589215328665">
+    <state width="1271" height="145" key="GridCell.Tab.0.center/49.27.1317.741@49.27.1317.741" timestamp="1589573284818" />
+    <state width="1271" height="145" key="GridCell.Tab.0.left" timestamp="1589573284817">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="440" key="GridCell.Tab.0.left/49.27.1317.741@49.27.1317.741" timestamp="1589215328665" />
-    <state width="1271" height="440" key="GridCell.Tab.0.right" timestamp="1589215328667">
+    <state width="1271" height="145" key="GridCell.Tab.0.left/49.27.1317.741@49.27.1317.741" timestamp="1589573284817" />
+    <state width="1271" height="145" key="GridCell.Tab.0.right" timestamp="1589573284818">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state width="1271" height="440" key="GridCell.Tab.0.right/49.27.1317.741@49.27.1317.741" timestamp="1589215328667" />
+    <state width="1271" height="145" key="GridCell.Tab.0.right/49.27.1317.741@49.27.1317.741" timestamp="1589573284818" />
     <state width="1271" height="322" key="GridCell.Tab.1.bottom" timestamp="1589202940805">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
@@ -252,7 +256,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/dao/SearchDao.java</url>
-          <line>27</line>
+          <line>29</line>
           <properties field="mongoTemplate" class="com.example.demo.dao.SearchDao" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>

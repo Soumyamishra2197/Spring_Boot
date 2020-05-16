@@ -8,6 +8,7 @@ import com.example.demo.service.SearchService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -46,7 +47,7 @@ public class OperationController {
 
     @RequestMapping(value = "/findFileByUploadDate",method =RequestMethod.GET )
     @ApiOperation(value = "find a document by upload date")
-    public Uploads findUploadByUploadDate(@RequestParam("uploadDate") LocalDateTime date){
+    public Uploads findUploadByUploadDate(@RequestParam("uploadDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime date){
        return searchService.findDocumentByDate(date);
     }
 
